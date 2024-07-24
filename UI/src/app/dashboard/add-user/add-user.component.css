@@ -1,0 +1,80 @@
+/* Global Styles
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+} */
+
+.maincontainer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-container {
+    width: 250px;
+   
+  
+}
+
+.right-container {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-user {
+    width: 100%;
+    max-width: 90%px;
+}
+
+.user-form-card {
+    width: 100%;
+    padding: 20px;
+}
+
+.user-details {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.user-details mat-form-field {
+    flex: 1;
+    min-width: 200px;
+}
+
+.upload-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.upload-label {
+    cursor: pointer;
+    text-align: center;
+    color: #3f51b5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.custom-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}

@@ -1,0 +1,57 @@
+.main-container {
+    display: flex;
+    width: 100%;
+}
+
+.left-container,
+.right-container {
+    flex: 1;
+
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+mat-card {
+    width: 400px;
+    padding: 20px;
+}
+
+.custom-blue-button {
+    background-color: #4285F4 !important;
+    color: #ffffff !important;
+}
+
+.custom-blue-button:hover {
+    background-color: #9acbfc !important; 
+}
+
+
+.full-width {
+    width: 100%;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

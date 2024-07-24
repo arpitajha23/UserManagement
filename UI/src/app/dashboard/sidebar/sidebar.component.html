@@ -1,0 +1,16 @@
+
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened>
+      <mat-toolbar>Integrity Solution</mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item routerLink="/dashboard">Dashboard</a>
+        <a mat-list-item routerLink="/manage-user">Manage User</a>
+        <a mat-list-item routerLink="/add-user">Add User</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
