@@ -12,6 +12,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { MainmenuComponent } from '../mainmenu/mainmenu.component';
 
 
 @Component({
@@ -30,7 +31,8 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
     MatNativeDateModule,
     MatCheckboxModule,
     MatCardModule,
-    SidebarComponent
+    SidebarComponent,
+    MainmenuComponent
   ],
   templateUrl: './add-user.component.html',
   styleUrl: './add-user.component.css'

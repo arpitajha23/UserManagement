@@ -1,0 +1,49 @@
+.sidebar {
+    width: 200px;
+    background-color: #3b82f6;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar h1 {
+    font-size: 18px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar nav ul li a img.icon {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.sidebar nav ul li a .arrow {
+    margin-left: auto;
+}
+
+.sidebar nav ul li .sub-menu {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sidebar nav ul li .sub-menu li {
+    margin: 10px 0;
+}

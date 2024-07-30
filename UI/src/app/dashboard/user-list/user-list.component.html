@@ -1,1 +1,58 @@
-<p>user-list works!</p>
+<div class="dashboard">
+    <app-sidebar class="app-sidebar"></app-sidebar>
+    <div class="content">
+      <app-mainmenu class="app-mainmenu"></app-mainmenu>
+      <div class="status-cards">
+        <div class="card active">
+            <span class="img">
+
+                <img src="\assets\active.png" alt="Active Icon" class="card-icon">
+                <h3>Active</h3>
+                  <p>{{ activeUsers }}</p>
+            </span>
+            <div class="count">
+        </div>
+        </div>
+        <div class="card inactive">
+          <img src="\assets\inactive.png" alt="Inactive Icon" class="card-icon">
+          <h3>Inactive</h3>
+          <div class="count">
+            <p>{{ inactiveUsers }}</p>
+          </div>
+         
+        </div>
+      </div>
+      <div class="user-list">
+        <h2>User List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>First Name <img src="\assets\caret.png" alt="Sort Icon"></th>
+              <th>Middle Name <img src="\assets\caret.png" alt="Sort Icon"></th>
+              <th>Last Name <img src="\assets\caret.png" alt="Sort Icon"></th>
+              <th>DOB <img src="\assets\caret.png" alt="Sort Icon"></th>
+              <th>Email <img src="\assets\caret.png" alt="Sort Icon"></th>
+              <th>Contact No <img src="\assets\caret.png" alt="Sort Icon"></th>
+              <th>City <img src="\assets\caret.png" alt="Sort Icon"></th>
+              <th>State <img src="\assets\caret.png" alt="Sort Icon"></th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users">
+              <td>{{ user.firstName }}</td>
+              <td>{{ user.middleName }}</td>
+              <td>{{ user.lastName }}</td>
+              <td>{{ user.dob }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.contactNo }}</td>l
+              <td>{{ user.city }}</td>
+              <td>{{ user.state }}</td>
+              <td><button (click)="viewUser(user)"><img src="\assets\Action.png" alt="View Icon"></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
